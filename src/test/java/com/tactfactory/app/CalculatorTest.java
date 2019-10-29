@@ -52,7 +52,18 @@ public class CalculatorTest {
         int actual = calc.sup(a, b);
 
         Assert.assertEquals(expected, actual, 0);
+    }
 
+    @Test
+    public void testMul() {
+        int a = 3;
+        int b = 2;
+        int expected = 6;
+
+//        Calculator calc = new Calculator();
+        int actual = calc.mul(a, b);
+
+        Assert.assertEquals(expected, actual, 0);
     }
 
     @Test
@@ -65,7 +76,6 @@ public class CalculatorTest {
         int actual = calc.div(a, b);
 
         Assert.assertEquals(expected, actual, 0);
-
     }
 
     @Test(expected = DivByZeroException.class)
